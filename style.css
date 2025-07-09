@@ -1,0 +1,175 @@
+
+body {
+  font-family: Arial, sans-serif;
+  background-color: #fdfdfd;
+  margin: 0;
+  padding: 0;
+}
+nav ul {
+  list-style-type: none;
+  background-color: #000000;
+  overflow: hidden;
+  padding: 10px;
+  margin: 0;
+  display: flex;
+}
+
+nav ul li {
+  justify-content: center;
+  align-items: center;
+  border: 2px solid rgb(122, 210, 245);
+  border-radius: 20px;
+  margin: 5px;
+  box-shadow: 0 0 20px 5px rgba(0, 123, 255, 0.6);
+}
+nav ul li a {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 10px;
+  text-decoration: none;
+}
+nav ul li:hover {
+  background-color: #32d2dd;
+}
+/* Header */
+header {
+  background-color: #5dd7ec;
+  padding: 20px 20px;
+  text-align: center;
+  font-family: cursive;
+}
+
+header h1 {
+  font-size: 2.5rem;
+  margin-bottom: 5px;
+}
+
+header p {
+  font-size: 3rem;
+}
+
+/* Sections */
+section {
+  padding: 30px 20px;
+  margin: auto;
+}
+
+section div {
+  display: flex;
+  border: 2px solid black;
+  border-radius: 20px;
+  padding: 20px;
+  justify-content: center;
+  align-items: center;
+  box-shadow: 0 0 20px 5px rgba(0, 123, 255, 0.6);
+}
+
+.intro {
+  text-align: center;
+}
+
+.div-konflik {
+  margin-bottom: 40px;
+}
+
+.imgkanan,
+.imgkiri {
+  width: 500px;
+  height: 300px;
+  margin-top: 15px;
+  transition: transform 0.4s ease;
+  cursor: pointer;
+  border-radius: 10px;
+}
+
+/* Posisi khusus */
+.imgkanan {
+  margin-left: 20px;
+}
+
+.imgkiri {
+  margin-right: 20px;
+}
+
+/* Efek gerak saat hover */
+.imgkanan:hover {
+  transform: translateX(10px) scale(1.05);
+}
+
+.imgkiri:hover {
+  transform: translateX(-10px) scale(1.05);
+}
+
+
+section p {
+  text-align: justify;
+}
+
+section h2 {
+  color: #d63031;
+  margin-bottom: 10px;
+}
+
+/* Video */
+video {
+  display: block;
+  margin: 20px auto;
+  max-width: 100%;
+  border: 4px solid #2d3436;
+  border-radius: 10px;
+}
+
+.card {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+  padding: 20px;
+}
+
+.div-card {
+  background-color: #ffffff;
+  width: 300px;
+  border: 2px solid #ccc;
+  border-radius: 15px;
+  padding: 15px;
+  text-align: center;
+  box-shadow: 0 0 15px rgba(0, 123, 255, 0.3); /* Efek cahaya */
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  display: block;
+}
+
+.div-card:hover {
+  transform: scale(1.05);
+  box-shadow: 0 0 25px rgba(0, 123, 255, 0.6);
+}
+
+.div-card img {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+  border-radius: 10px;
+  margin-bottom: 10px;
+}
+
+.div-card h1 {
+  font-size: 1.2rem;
+  margin: 10px 0;
+  color: #2d3436;
+}
+
+.div-card p {
+  font-size: 0.95rem;
+  color: #444;
+}
+
+
+/* Footer */
+footer {
+  background-color: #2d3436;
+  color: white;
+  text-align: center;
+  padding: 15px;
+  margin-top: 30px;
+}
